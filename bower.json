@@ -1,0 +1,23 @@
+{
+  "name": "autoComplete-directive",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jshcrowthe/autoComplete-directive",
+  "authors": [
+    "Joshua D Crowther <jshcrowthe@gmail.com>"
+  ],
+  "description": "AutoComplete Directive for AngularJS",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "autoComplete"
+  ],
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "angular": "~1.2.20",
+    "angular-mocks": "~1.2.20",
+    "jquery":"~1.x",
+    "jquery-ui":"~1.x"
+  }
+}

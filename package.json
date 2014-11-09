@@ -1,0 +1,46 @@
+{
+  "name": "ngHttpQueue",
+  "version": "0.0.0",
+  "description": "A service to restrict the number of AJAX requests being fired at once as to not block the browser from making other requests.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": "v0.10.x"
+  },
+  "dependencies": {
+    "chai": "^1.9.1",
+    "gulp": "^3.8.6",
+    "gulp-bower": "0.0.6",
+    "gulp-concat": "^2.3.4",
+    "gulp-jsclosure": "0.0.1",
+    "gulp-karma": "^0.0.4",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.3.1",
+    "gulp-watch": "^0.6.8",
+    "karma": "^0.12.17",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^0.1.6",
+    "karma-mocha-reporter": "^0.2.8",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "mocha": "^1.20.1",
+    "node-karma-wrapper": "^0.2.2"
+  },
+  "scripts": {
+    "test": "gulp bower && gulp build && gulp test-run && gulp minify && gulp test-run-min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jshcrowthe/ngHttpQueue.git"
+  },
+  "author": "Josh Crowther <jshcrowthe@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jshcrowthe/ngHttpQueue/issues"
+  },
+  "homepage": "https://github.com/jshcrowthe/ngHttpQueue",
+  "devDependencies": {
+    "karma": "^0.12.24"
+  }
+}
