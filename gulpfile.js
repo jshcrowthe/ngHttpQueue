@@ -14,12 +14,12 @@ gulp.task('bower', function() {
 
 gulp.task('build', function() {
   return gulp.src(['./src/*.js'])
-          .pipe(concat('ngComplete.js'))
+          .pipe(concat('ngHttpQueue.js'))
           .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('minify', function() {
-  return gulp.src('./dist/ngComplete.js')
+  return gulp.src('./dist/ngHttpQueue.js')
           .pipe(uglify())
           .pipe(rename(function(path) {
             path.extname = '.min' + path.extname;
@@ -51,7 +51,7 @@ gulp.task('test-run-min', function (done) {
 
 gulp.task('default', ['build', 'minify', 'test-run', 'test-run-min'], function() {
   gulp.watch(projectFiles, ['build']);
-  gulp.watch('./dist/ngComplete.js', ['test-run']);
-  gulp.watch('./dist/ngComplete.js', ['minify']);
-  gulp.watch('./dist/ngComplete.min.js', ['test-run-min']);
+  gulp.watch('./dist/ngHttpQueue.js', ['test-run']);
+  gulp.watch('./dist/ngHttpQueue.js', ['minify']);
+  gulp.watch('./dist/ngHttpQueue.min.js', ['test-run-min']);
 });
