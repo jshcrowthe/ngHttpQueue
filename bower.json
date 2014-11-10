@@ -1,7 +1,7 @@
 {
-  "name": "autoComplete-directive",
+  "name": "ngHttpQueue",
   "version": "0.0.0",
-  "homepage": "https://github.com/jshcrowthe/autoComplete-directive",
+  "homepage": "https://github.com/jshcrowthe/ngHttpQueue",
   "authors": [
     "Joshua D Crowther <jshcrowthe@gmail.com>"
   ],
@@ -10,14 +10,14 @@
     "node"
   ],
   "keywords": [
-    "autoComplete"
+    "$http",
+    "queue",
+    "request"
   ],
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "angular": "~1.2.20",
-    "angular-mocks": "~1.2.20",
-    "jquery":"~1.x",
-    "jquery-ui":"~1.x"
+    "angular": "~1.x",
+    "angular-mocks": "~1.x"
   }
 }

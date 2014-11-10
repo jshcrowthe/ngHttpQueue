@@ -7,6 +7,8 @@ var closure = require('gulp-jsclosure');
 var bower = require('gulp-bower');
 var rename = require('gulp-rename');
 
+var projectFiles = ['src/*'];
+
 gulp.task('bower', function() {
   return bower()
     .pipe(gulp.dest('./bower_components'));
