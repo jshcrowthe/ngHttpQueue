@@ -37,7 +37,15 @@
           runReq(channel)();
 
           return dfd.promise;
-        }
+        },
+        getReqs : function(channel) { 
+          if (!channel) return _reqs; 
+          return _reqs[channel];
+        },
+        getActiveReqs : function(channel) {
+          if (!channel) return _activeReqs; 
+          return _activeReqs[channel];
+        },
       };
     }];
   });
