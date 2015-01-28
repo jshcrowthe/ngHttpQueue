@@ -28,7 +28,7 @@
     "node-karma-wrapper": "^0.2.2"
   },
   "scripts": {
-    "test": "gulp bower && gulp build && gulp test-run && gulp minify"
+    "test": "gulp bower && gulp build && gulp test-run"
   },
   "repository": {
     "type": "git",

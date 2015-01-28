@@ -44,16 +44,8 @@ gulp.task('test-run', function (done) {
   }, done);
 });
 
-gulp.task('test-run-min', function (done) {
-  karma.start({
-    configFile: __dirname + '/karma-min.conf.js',
-    singleRun: true
-  }, done);
-});
-
-gulp.task('default', ['build', 'minify', 'test-run', 'test-run-min'], function() {
+gulp.task('default', ['build', 'minify', 'test-run'], function() {
   gulp.watch(projectFiles, ['build']);
   gulp.watch('./dist/ngHttpQueue.js', ['test-run']);
   gulp.watch('./dist/ngHttpQueue.js', ['minify']);
-  gulp.watch('./dist/ngHttpQueue.min.js', ['test-run-min']);
 });
